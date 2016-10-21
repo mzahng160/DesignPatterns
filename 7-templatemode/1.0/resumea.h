@@ -1,0 +1,15 @@
+#ifndef RESUMEA_H_
+#define RESUMEA_H_
+
+#include "resume.h"
+
+class ResumeA : public Resume
+{	
+public:
+	ResumeA(const char *str);
+	ResumeA(const ResumeA &r);
+	~ResumeA();
+	ResumeA *Clone();
+	void Show();
+};
+#endif // RESUMEA_H_
